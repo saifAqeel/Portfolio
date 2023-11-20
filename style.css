@@ -184,7 +184,7 @@ nav ul li a:hover::after{
     grid-gap: 40px;
     margin-top: 50px;
     padding: 20px;
-    height: 500px;
+    height: 100%;
 }
 .work{
     border-radius: 10px;
