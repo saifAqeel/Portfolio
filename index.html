@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/df761de163.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Saif</span> <br>Aqeel From India</h1>
+            </div>
+        </div>
+    </div>
+
+<!-- --------------about-------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile pic-2.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey there! I'm Saif Aqeel, an ECE BTech student fueled by an unbridled passion for coding and development. I dive deep into the world of programming, constantly honing my skills to craft innovative solutions. Through my projects, I aim to blend creativity with technical finesse, striving to leave a lasting impact in the coding realm. Join me on this journey of turning ideas into reality through the power of code.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skill</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software Developer</span><br>Data structures and algorithms</li>
+                            <li><span>Web Developer</span><br>Web app development</li>
+                            <li><span>Data Analyst</span><br>Analysis of data</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Leetcode</span><br>200+ Questions</li>
+                            <li><span>CodSoft</span><br>2 Months Training Internship </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech</span><br>GGSIPU (GTBIT) 2020-24</li>
+                            <li><span>High Secondary School</span><br>NEW GREEN FIELD SCCHOOL(CBSE) 2018-20</li>
+                            <li><span>Secondary School</span><br>NEW GREEN FIELD SCHOOL(CBSE) 2017-18</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------services------------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-regular fa-window-restore"></i>
+                    <h2>Web Development</h2>
+                    <p>As a web developer, I offer tailored digital solutions that breathe life into your online presence. With a focus on user-centric design and robust functionality, I craft responsive websites and applications that resonate with your brand identity.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Software Development</h2>
+                    <p>As a software developer, I excel in crafting robust, scalable, and customized solutions tailored to your specific requirements. I specialize in developing high-quality applications that streamline processes, enhance productivity, and propel your business forward.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Data Analysis</h2>
+                    <p>As a data analyst, I uncovers valuable insights from your data, guiding informed decisions and business growth. From raw data to actionable insights, I help transform information into opportunities for your business.</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------Portfolio------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg">
+                    <div class="layer">
+                        <h3>Maosam</h3>
+                        <p>Step into Mausam, your digital weather companion delivering precise forecasts and real-time updates. With the Rapid API at its core, Mausam offers a seamless interface to explore weather patterns, empowering you to plan your day with confidence.</p>
+                        <a href="https://saifaqeel.github.io/Weather-App/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg">
+                    <div class="layer">
+                        <h3>Taaza Khabar</h3>
+                        <p>Taaza Khabar, your gateway to the latest news and updates from around the globe. Powered by NewsAPI, Taaza Khabar brings you a curated selection of breaking news, insightful stories, and diverse perspectives. Dive into a world of information, explore in-depth articles, and stay informed with real-time updates on topics that matter to you. </p>
+                        <a href="https://saifaqeel.github.io/news-website/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg">
+                    <div class="layer">
+                        <h3>Red-store</h3>
+                        <p>RedStore, your ultimate destination for a delightful shopping experience! Step into a world of endless possibilities, where quality meets affordability. With an array of products spanning from fashion to tech, home essentials to trending gadgets, RedStore is here to cater to your every need.</p>
+                        <a href="https://saifaqeel.github.io/REDSTORE/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div> 
+            <a href="" class="btn">See more  <i class="fa-brands fa-github"></i></a>           
+        </div>
+    </div>
+
+    <!-- --------------Contact------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>saifaqeel2056@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/saif-aqeel-ab8800223/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="images/Resume .pdf" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="7"placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © SaifAqeel</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbygcHVmbYEPwwwA3R4Ajvcgyg5yYhz3cdOXDxvdjgz3ChcUAPhmToAw5IdWGw_hF0lf/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+</body>
+</html>
